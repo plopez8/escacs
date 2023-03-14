@@ -1,0 +1,8 @@
+.tablero{
+    display:flex;
+    flex-direction: row;
+}
+.horitzontal{
+    display:flex;
+    flex-direction: column;
+}

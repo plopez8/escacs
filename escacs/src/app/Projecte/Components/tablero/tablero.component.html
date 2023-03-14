@@ -1,0 +1,12 @@
+<div class="tablero">
+    <div class="horitzontal" *ngFor="let casilla of this.tablero.casillas;">
+        <div *ngFor="let casilla of casilla;">
+            <div id="{{casilla.posicion}}" cdkDropList (cdkDropListDropped)="onDrop($event)">
+                <div class="vertical" [ngStyle]="{'background-color': casilla.color}">
+                        <img [src]="casilla.pieza.imagen" cdkDrag>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
